@@ -1,0 +1,14 @@
+SELECT
+    order_line_key,
+    order_key,
+    store_key,
+    order_date_key,
+    product_key,
+    stone_key,
+    alloy_key,
+    location_key,
+    order_quantity,
+    unit_price,
+    line_total
+FROM
+    {{ref("stg_fact_orders")}}
