@@ -33,6 +33,7 @@ pip install --no-cache-dir \
     "apache-airflow-providers-google" \
     --constraint "${CONSTRAINT_URL}"
 
+pip insatll scrapy
 
 mkdir -p ${AIRFLOW_HOME}/{dags,logs,plugins}
 
@@ -103,6 +104,7 @@ deactivate
 
 python3 -m venv ${DBT_VENV_PATH}
 source ${DBT_VENV_PATH}/bin/activate
+
 
 python3 -m pip install dbt-core dbt-bigquery
 
