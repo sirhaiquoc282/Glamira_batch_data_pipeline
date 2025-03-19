@@ -1,11 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-MONGO_VERSION=${mongo_version:-"8.0"}
-ADMIN_USER=${mongodb_admin_user:-"admin"}
-ADMIN_PASSWORD=${mongodb_admin_password:-"secure_password_123"}
-MONGO_PORT=${mongo_port:-"27017"}
-
+MONGO_VERSION="8.0"
+ADMIN_USER="admin"
+ADMIN_PASSWORD="admin"
+MONGO_PORT="27017"
 
 sudo apt-get install -y gnupg curl
 
@@ -33,7 +32,6 @@ sudo systemctl start mongod
 
 sleep 10
 
-echo "Creating admin user..."
 mongosh --port $MONGO_PORT admin <<EOF
 db.createUser({
   user: "$ADMIN_USER",
