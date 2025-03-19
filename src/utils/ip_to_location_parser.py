@@ -25,7 +25,7 @@ class IPtoLocationParser:
     def _default_location(self, ip):
         return {
             "ip": ip,
-            "country_short": "-",
+            "country_short": "Unknown",
             "country_long": "Unknown",
             "region": "Unknown",
             "city": "Unknown",

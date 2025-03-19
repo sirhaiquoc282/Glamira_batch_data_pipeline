@@ -1,2 +1,3 @@
 .history/
-src/data_crawling/.scrapy/
+logs/scrapy
+src/data_crawling/settings.py
