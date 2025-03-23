@@ -93,4 +93,4 @@
 4. Once the raw data is stored in the data lake, Google Cloud Functions automatically triggers the transfer of data from GCS to Google BigQuery.
 5. The data is transformed and modeled using DBT.
 6. The processed data from the data warehouse is used to build dashboards in Looker.
-
+![Glamira data pipeline architecture](images/image.png)
